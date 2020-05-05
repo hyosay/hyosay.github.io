@@ -97,8 +97,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "ROKA"
   location         : "Republic Of Korea"
-  email            : "gytjdwjs@naver.com
-  email            : "gytjdwjs@cu.ac.kr
+  email            : "gytjdwjs@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
