@@ -12,29 +12,34 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : mmistakes/minimal-mistakes
-minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Hyo_seong_J"
 title_separator          : "&#124;"
-subtitle                 : "전효성의 은밀한 일기장" # site tagline that appears below site title in masthead
-name                     : "hyo_say"
-description              : "기억이 아닌 기록을 위해"
+subtitle                 : "전효성의 은밀한 일기" # site tagline that appears below site title in masthead
+name                     : "전효성"
+description              : "기억보단 기록을 합시다."
 url                      : "https://hyoseong-j.github.io"
 baseurl                  : ""
-repository               : hyoseong-j/hyoseong-j.github.io# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default)
+masthead_title           : "낭만적인 개발" # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : ture # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
@@ -64,6 +69,13 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -81,15 +93,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "jeong_hyo_seong"
+  name             : "전효성"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : AI_Bigdata_engineer
-  location         : "Daegu Catoholic University"
+  bio              : "낭만을 추구하는 개발자"
+  location         : "Daegu Catholic University"
   email            : "gytjdwjs@naver.com"
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      #url: mailto:gytjdwjs@naver.com
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/hyoseong-j
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/hyo__say/"
@@ -97,9 +112,21 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/hyoseong-j/"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/hyo__say/"
@@ -154,13 +181,13 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
-  hard_wrap: true
+  hard_wrap: false
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: true
+  enable_coderay: false
 
 
 # Sass/SCSS
@@ -232,13 +259,15 @@ compress_html:
 
 # Defaults
 defaults:
+  # _posts
   - scope:
-      path: "_pages"
+      path: ""
       type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments:  true
+      comments: # true
       share: true
       related: true
+masthead: 돛대 꼭대기, 돛대 꼭대기의 감시원, 발행인 란, 벌로 돛대 꼭대기에 오르게 하다, 돛대 에 올리다
