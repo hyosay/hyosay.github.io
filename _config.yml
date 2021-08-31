@@ -18,8 +18,8 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 title                    : "Hyo_seong_J"
 title_separator          : "-"
-subtitle                 : "전효성의 깃블로그" # site tagline that appears below site title in masthead
-name                     : ""
+subtitle                 : "전효성의 은밀한 일기장" # site tagline that appears below site title in masthead
+name                     : "hyo_say"
 description              : "An amazing website."
 url                      : "https://hyoseong-j.github.io"
 baseurl                  : ""
@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 20
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -95,8 +95,8 @@ analytics:
 author:
   name             : "jeong_hyo_seong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "ROKA"
-  location         : "Republic Of Korea"
+  bio              : AI_Bigdata_engineer
+  location         : "Daegu Catoholic University"
   email            : "gytjdwjs@naver.com"
   links:
     - label: "Email"
@@ -113,7 +113,7 @@ author:
       url: https://facebook.com/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: https://github.com/hyoseong-j
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/hyo__say/"
